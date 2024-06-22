@@ -1,9 +1,12 @@
+import {FaHouse} from "react-icons/fa6";
+
 const App = () => {
-  return (
-    <div>
-      Hello World!!
-    </div>
-  );
+    return (
+        <div>
+            <FaHouse/>
+            Hello World!!
+        </div>
+    );
 }
 
 export default App;
