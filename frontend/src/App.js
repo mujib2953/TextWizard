@@ -1,11 +1,9 @@
-import {FaHouse} from "react-icons/fa6";
+import {RouterProvider} from "react-router-dom";
+import router from "./utils/router";
 
 const App = () => {
     return (
-        <div>
-            <FaHouse/>
-            Hello World!!
-        </div>
+        <RouterProvider router={router} />
     );
 }
 
