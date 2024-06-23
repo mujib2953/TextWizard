@@ -1,0 +1,9 @@
+@use "../abstracts" as *;
+
+.light-theme {
+    @include light-theme;
+}
+
+.dark-theme {
+    @include dark-theme;
+}
