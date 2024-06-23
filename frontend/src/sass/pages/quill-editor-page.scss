@@ -1,3 +1,90 @@
 .quill-editor-page {
+    display: flex;
     padding: 1rem;
+
+    .files-list {
+        padding: 1rem;
+        border-right: 5px solid coral;
+        border-radius: 5px;
+
+        button {
+            padding: 0.25rem 1rem;
+            width: 10rem;
+            background-color: coral;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            margin-bottom: 0.5rem;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+
+        div {
+            cursor: pointer;
+            font-size: large;
+            border: 1px solid gray;
+            padding: 0.25rem 0.25rem 0.25rem 0.5rem;
+            color: gray;
+
+            &.active {
+                border-color: coral;
+                color: coral;
+            }
+
+            &:hover {
+                color: #000;
+                border-color: #000;
+            }
+        }
+    }
+
+    .editor {
+        flex: 1;
+        padding: 0 2rem;
+
+        .info-msg {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: large;
+
+            svg {
+                color: coral;
+            }
+        }
+
+        .file-name {
+            font-size: x-large;
+            text-decoration: underline;
+            text-decoration-style: double;
+            text-align: center;
+
+            span {
+                color: coral;
+            }
+        }
+
+        .btn-container {
+            padding-top: 1rem;
+            display: flex;
+            justify-content: space-evenly;
+
+            button {
+                padding: 0.25rem 1rem;
+                width: 15rem;
+                background-color: coral;
+                border: none;
+                border-radius: 5px;
+                color: white;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
 }
