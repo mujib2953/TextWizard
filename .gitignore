@@ -132,3 +132,6 @@ dist
 # editors
 .idea
 .vscode
+
+# all file uploaded in upload folder, not required on git ;)
+backend/files/uploads/*

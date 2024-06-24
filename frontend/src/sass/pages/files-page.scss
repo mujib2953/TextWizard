@@ -1,3 +1,82 @@
 .files-page {
     padding: 1rem;
+
+    .upload-container {
+        display: flex;
+        justify-content: center;
+        border-bottom: 3px solid coral;
+        padding: 0.5em;
+        margin-bottom: 1rem;
+        //box-shadow: 1px 10px 10px rgba(255, 127, 80, 0.5);
+
+        div {
+            border: 1px solid coral;
+            border-radius: 20px;
+            padding: 0.5rem;
+
+            input::file-selector-button, button {
+                padding: 0.25rem 1rem;
+                background-color: coral;
+                border: none;
+                border-radius: 5px;
+                color: white;
+                cursor: pointer;
+                font-weight: bold;
+            }
+
+            input::file-selector-button {
+                padding: 0.25rem;
+            }
+
+            button[disabled] {
+                opacity: 0.5;
+                cursor: default;
+            }
+        }
+    }
+
+    .upload-files-container {
+        display: flex;
+        justify-content: center;
+
+        table, th, td {
+            border: 1px solid coral;
+        }
+
+        table {
+            width: 80%;
+            border-collapse: collapse;
+
+            th, td {
+                padding: 0.25rem;
+            }
+
+            th {
+                font-weight: bold;
+                text-align: left;
+            }
+
+            tbody {
+                tr {
+                    cursor: pointer;
+
+                    &:nth-child(even) {
+                        background-color: #ffb99f;
+                    }
+
+                    &:hover {
+                        background-color: #ffd9ca;
+                    }
+
+                    td {
+                        &:nth-child(2) {
+                            display: flex;
+                            align-items: center;
+                            column-gap: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
